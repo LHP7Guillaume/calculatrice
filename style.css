@@ -25,3 +25,10 @@ height: 100vh;
 .casio {
     font-family: "DSEG7 classic";
 }
+
+.number {
+
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    box-shadow :inset 2px 2px rgb(71, 63, 63) !important;
+}
