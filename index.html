@@ -16,7 +16,11 @@
 </head>
 
 <body>
-    <main class="container fond">
+
+
+
+    <main class="container fond pt2">
+        <h4 class="text-center textecolor">Casio Fx-92x</h4>
         <div class="row ">
             <div class="col-12 ">
                 <span id="affichage" class="col-12 btn btn-secondary btn-lg btn-block ">
@@ -27,7 +31,7 @@
 
                 </span>
 
-                <div class="row gap-1 px-1">
+                <div class="row gap-1 px-1 pt-3 hadi">
                     <input type="button" id="" value="7" class="col btn btn-secondary input btn-lg btn-block"
                         onclick="displaynumber(7)" />
 
@@ -40,11 +44,11 @@
                         onclick="displaynumber(9)" />
 
 
-                    <input type="button" id="" value="+" class="col btn btn-secondary btn-lg btn-block"
+                    <input type="button" id="" value="+" class="col btn btn-secondary btn-lg btn-block text-danger"
                         onclick="displayOperator('+')" />
                 </div>
 
-                <div class="row gap-1 px-1 py-1">
+                <div class="row gap-1 px-1 py-1 hadi">
                     <input type="button" id="" value="4" class="col btn btn-secondary input btn-lg btn-block"
                         onclick="displaynumber(4)" />
 
@@ -56,11 +60,11 @@
                         onclick="displaynumber(6)" />
 
 
-                    <input type="button" id="" value="-" class="col btn btn-secondary btn-lg btn-block"
+                    <input type="button" id="" value="-" class="col btn btn-secondary btn-lg btn-block text-danger text-danger"
                         onclick="displayOperator('-')" />
                 </div>
 
-                <div class="row gap-1 px-1 py-1">
+                <div class="row gap-1 px-1 py-1 hadi">
                     <input type="button" id="" value="1" class="col btn btn-secondary input btn-lg btn-block"
                         onclick="displaynumber(1)" />
 
@@ -73,11 +77,11 @@
                         onclick="displaynumber(3)" />
 
 
-                    <input type="button" id="" value="X" class="col btn btn-secondary btn-lg btn-block "
+                    <input type="button" id="" value="X" class="col btn btn-secondary btn-lg btn-block text-danger"
                         onclick="displayOperator('X')" />
                 </div>
-                <div class="row gap-1 px-1 py-1">
-                    <input type="button" id="" value="." class="col btn btn-secondary btn-lg btn-block"
+                <div class="row gap-1 px-1 py-1 hadi">
+                    <input type="button" id="" value="." class="col btn btn-secondary btn-lg btn-block text-danger"
                         onclick="displayPoint('')" />
 
 
@@ -85,16 +89,18 @@
                         onclick="displaynumber(0)" />
 
 
-                    <input type="button" id="" value="C" class="col btn btn-danger btn-lg btn-block"
+                    <input type="button" id="" value="C" class="col btn btn-danger btn-lg btn-block "
                         onclick="reset()" />
 
 
-                    <input type="button" id="" value="/" class="col btn btn-secondary btn-lg btn-block"
+                    <input type="button" id="" value="/" class="col btn btn-secondary btn-lg btn-block text-danger"
                         onclick="displayOperator('/')" />
                 </div>
-                <div class="row">
+                <div class="row hadi2">
                     <input type="button" id="" value="=" class="col-12 btn btn-secondary btn-lg btn-block"
                         onclick="display('=')" />
+
+
 
                 </div>
             </div>
@@ -143,6 +149,7 @@
             //on recharge la zone par dafaut sur firstNumber
 
             display = document.getElementById("firstNumber")
+            point = false
         }
 
         function displayPoint() {
